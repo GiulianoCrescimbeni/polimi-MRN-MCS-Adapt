@@ -19,6 +19,13 @@ In O-RAN architectures, xApps are microservices that perform data collection and
 * **Stateful Logic**: The xApp remembers the original MCS of a UE before overriding it, ensuring network restoration when channel conditions improve.
 * **Interactive Configuration**: Thresholds and target MCS values are configurable at runtime.
 
+### 🧪 Simulation & Testing Environment
+This project has been fully tested and validated using the **ANTLab gNB Emulator**, which simulates the behavior of a **5G antenna** and provides the necessary E2 agent functionalities.
+
+* **5G gNB Emulator Code**: [https://github.com/ANTLab-polimi/gNB-e2sm-emu](https://github.com/ANTLab-polimi/gNB-e2sm-emu)
+
+The emulator was modified (using the `gnb_message_handlers.c` provided in this repo) to generate realistic 5G metrics (BER/MCS) and respond to the xApp's control commands.
+
 ---
 
 ## 🏗 Architecture
