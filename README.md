@@ -36,7 +36,6 @@ The standard E2SM was extended to support specific telemetry fields:
 
 MCSAdapt-xApp.py        # Main Python xApp logic
 gnb_message_handlers.c  # C extension for the gNB emulator to handle specific messages
-ran_messages.proto      # Protocol Buffer definitions
 ProtocolDesign.pdf      # Detailed documentation of the protocol design
 README.md               # Project documentation
 ```
